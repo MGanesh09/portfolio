@@ -10,7 +10,7 @@ export const personal = {
   github: 'https://github.com/MGanesh09',
   location: 'Amaravati, Andhra Pradesh, India',
   bio: [
-    'I\'m a passionate Computer Science Engineering student at VIT-AP University with a CGPA of 8.1/10, driven by the intersection of software engineering and artificial intelligence.',
+    'I\'m a passionate Computer Science Engineering student at VIT-AP University with a CGPA of 8.24/10, driven by the intersection of software engineering and artificial intelligence.',
     'With hands-on experience building AI-powered platforms, full-stack web applications, and cloud-integrated systems, I bridge the gap between complex data and human-centered digital experiences.',
     'From predicting business success to advising farmers with AI, my projects reflect a commitment to solving real-world problems through technology.',
   ],
@@ -22,7 +22,7 @@ export const education = [
     institution: 'VIT-AP University',
     location: 'Amaravati, Andhra Pradesh',
     period: '2023 – 2027',
-    grade: 'CGPA: 8.1/10',
+    grade: 'CGPA: 8.24/10',
     courses: ['Data Structures & Algorithms', 'Database Management Systems', 'Operating Systems', 'Computer Networks', 'Object-Oriented Programming', 'Software Engineering', 'Machine Learning'],
   },
 ];
@@ -120,7 +120,7 @@ export const certifications = [
 export const achievements = [
   { num: 250, suffix: '+', label: 'DSA Problems Solved', sublabel: 'LeetCode, CodeChef, HackerRank', icon: '⚡' },
   { num: 100, suffix: '', label: 'Days Coding Challenge', sublabel: 'Completed in Java', icon: '🔥' },
-  { num: 8.1, suffix: '/10', label: 'CGPA at VIT-AP', sublabel: 'B.Tech CSE', icon: '🎓', decimals: 1 },
+  { num: 8.24, suffix: '/10', label: 'CGPA at VIT-AP', sublabel: 'B.Tech CSE', icon: '🎓', decimals: 2 },
   { num: 3, suffix: '+', label: 'Industry Certifications', sublabel: 'Oracle, AWS, IBM, HackerRank', icon: '🏆' },
 ];
 
