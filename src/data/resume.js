@@ -7,7 +7,7 @@ export const personal = {
   email: 'mannenaganesh09@gmail.com',
   phone: '+91 9133446324',
   linkedin: 'https://linkedin.com/in/mannenaganesh',
-  github: 'https://github.com/mannenaganesh',
+  github: 'https://github.com/MGanesh09',
   location: 'Amaravati, Andhra Pradesh, India',
   bio: [
     'I\'m a passionate Computer Science Engineering student at VIT-AP University with a CGPA of 8.1/10, driven by the intersection of software engineering and artificial intelligence.',
@@ -64,8 +64,8 @@ export const projects = [
     description: 'An AI-powered platform that predicts business success using location, competition, budget, and market demand analysis. Features geospatial mapping, machine learning models, and interactive dashboards to deliver revenue forecasts and actionable business insights.',
     tech: ['Python', 'React.js', 'Machine Learning', 'Geospatial APIs', 'Node.js', 'MongoDB'],
     features: ['ML-based success prediction', 'Geospatial mapping', 'Interactive dashboards', 'Revenue forecasting', 'Competitor analysis'],
-    github: 'https://github.com/mannenaganesh',
-    live: null,
+    github: 'https://github.com/MGanesh09/business-success-predictor',
+    live: 'https://github.com/MGanesh09/business-success-predictor',
     gradient: 'linear-gradient(135deg, rgba(0,245,255,0.1), rgba(191,0,255,0.05))',
   },
   {
@@ -74,8 +74,8 @@ export const projects = [
     description: 'A location intelligence platform that evaluates rental properties based on rent, safety, commute time, nearby amenities, and neighborhood analysis. Implements AI-driven recommendations and interactive maps to help users make informed, data-backed rental decisions.',
     tech: ['React.js', 'Node.js', 'Express.js', 'Maps API', 'MongoDB', 'AI/ML'],
     features: ['AI-driven recommendations', 'Interactive property maps', 'Neighborhood scoring', 'Commute analysis', 'Safety ratings'],
-    github: 'https://github.com/mannenaganesh',
-    live: null,
+    github: 'https://github.com/MGanesh09/smart-rent-analyzer',
+    live: 'https://github.com/MGanesh09/smart-rent-analyzer',
     gradient: 'linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,245,255,0.05))',
   },
   {
@@ -84,8 +84,8 @@ export const projects = [
     description: 'An AI-based crop advisory system that recommends suitable crops using soil composition, weather patterns, and budget constraints. Integrates predictive analytics for yield estimation, real-time disease alerts, smart irrigation planning, and profit forecasting.',
     tech: ['Python', 'Machine Learning', 'React.js', 'Weather APIs', 'Node.js', 'PostgreSQL'],
     features: ['AI crop recommendations', 'Yield prediction', 'Disease alert system', 'Irrigation planning', 'Profit forecasting'],
-    github: 'https://github.com/mannenaganesh',
-    live: null,
+    github: 'https://github.com/MGanesh09/smart-crop-analyzer',
+    live: 'https://github.com/MGanesh09/smart-crop-analyzer',
     gradient: 'linear-gradient(135deg, rgba(255,0,128,0.08), rgba(191,0,255,0.05))',
   },
 ];
