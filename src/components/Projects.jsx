@@ -39,7 +39,7 @@ function ProjectCard({ project, index }) {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <span className="project-number" style={{ fontSize: 13, fontFamily: 'JetBrains Mono, monospace', color: '#00f5ff' }}>{project.id}</span>
         <span style={{ fontSize: 26, filter: hovered ? 'drop-shadow(0 0 10px rgba(0,245,255,0.5))' : 'none', transition: 'filter 0.3s' }}>
-          {index === 0 ? '🏢' : index === 1 ? '🏠' : '🌾'}
+          {project.icon || (index === 0 ? '🏢' : index === 1 ? '🏠' : index === 2 ? '🌾' : index === 3 ? '🏏' : '🌿')}
         </span>
       </div>
 

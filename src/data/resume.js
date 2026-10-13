@@ -67,6 +67,7 @@ export const projects = [
     github: 'https://github.com/MGanesh09/business-success-predictor',
     live: 'https://github.com/MGanesh09/business-success-predictor',
     gradient: 'linear-gradient(135deg, rgba(0,245,255,0.1), rgba(191,0,255,0.05))',
+    icon: '🏢',
   },
   {
     id: '02',
@@ -77,6 +78,7 @@ export const projects = [
     github: 'https://github.com/MGanesh09/smart-rent-analyzer',
     live: 'https://github.com/MGanesh09/smart-rent-analyzer',
     gradient: 'linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,245,255,0.05))',
+    icon: '🏠',
   },
   {
     id: '03',
@@ -87,6 +89,29 @@ export const projects = [
     github: 'https://github.com/MGanesh09/smart-crop-analyzer',
     live: 'https://github.com/MGanesh09/smart-crop-analyzer',
     gradient: 'linear-gradient(135deg, rgba(255,0,128,0.08), rgba(191,0,255,0.05))',
+    icon: '🌾',
+  },
+  {
+    id: '04',
+    title: 'Crickee – Cricket Auction Room',
+    description: 'A real-time fantasy cricket auction platform featuring live multiplayer bidding, dynamic countdown timers, squad management, and custom fantasy point calculation. Built with Socket.io for instant bidding synchronization and interactive live banter chat.',
+    tech: ['React.js', 'Node.js', 'Socket.io', 'Express.js', 'MongoDB', 'WebSockets'],
+    features: ['Live real-time auction room', 'Dynamic countdown timers', 'Squad & captain management', 'Custom fantasy scoring system', 'Live match scoreboard integration'],
+    github: 'https://github.com/MGanesh09/cricketAuctionRoom',
+    live: 'https://mganesh09.github.io/cricketAuctionRoom/',
+    gradient: 'linear-gradient(135deg, rgba(255,170,0,0.1), rgba(255,0,128,0.05))',
+    icon: '🏏',
+  },
+  {
+    id: '05',
+    title: 'Crop Doctor',
+    description: 'An AI-powered plant disease detection and agronomic advisory platform. Uses a Deep Learning CNN trained on 15,000+ leaf images across 41 classes, coupled with RAG (FAISS + LangChain) and LLM advisory to diagnose diseases and deliver agronomic treatment recommendations.',
+    tech: ['Python', 'TensorFlow', 'FastAPI', 'CNN / Deep Learning', 'LangChain', 'FAISS'],
+    features: ['41-class CNN leaf disease detection', 'RAG agronomic advisory system', 'Organic & chemical treatment plans', 'Interactive drag-and-drop analysis', 'Preventive care guidelines'],
+    github: 'https://github.com/MGanesh09/Crop_doctor',
+    live: 'https://mganesh09.github.io/Crop_doctor/',
+    gradient: 'linear-gradient(135deg, rgba(0,255,136,0.1), rgba(0,245,255,0.05))',
+    icon: '🌿',
   },
 ];
 
@@ -118,7 +143,7 @@ export const certifications = [
 ];
 
 export const achievements = [
-  { num: 250, suffix: '+', label: 'DSA Problems Solved', sublabel: 'LeetCode, CodeChef, HackerRank', icon: '⚡' },
+  { num: 100, suffix: '+', label: 'DSA Problems Solved', sublabel: 'LeetCode, CodeChef, HackerRank', icon: '⚡' },
   { num: 100, suffix: '', label: 'Days Coding Challenge', sublabel: 'Completed in Java', icon: '🔥' },
   { num: 8.24, suffix: '/10', label: 'CGPA at VIT-AP', sublabel: 'B.Tech CSE', icon: '🎓', decimals: 2 },
   { num: 3, suffix: '+', label: 'Industry Certifications', sublabel: 'Oracle, AWS, IBM, HackerRank', icon: '🏆' },

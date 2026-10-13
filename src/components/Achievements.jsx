@@ -44,7 +44,7 @@ export default function Achievements() {
   const titleRef = useRef(null);
 
   const list = [
-    { icon: '⚡', title: 'DSA Warrior', desc: 'Solved 250+ Data Structures and Algorithms problems across LeetCode, CodeChef, and HackerRank — consistently sharpening algorithmic thinking.' },
+    { icon: '⚡', title: 'DSA Warrior', desc: 'Solved 100+ Data Structures and Algorithms problems across LeetCode, CodeChef, and HackerRank — consistently sharpening algorithmic thinking.' },
     { icon: '🔥', title: '100 Days of Code', desc: 'Successfully completed the prestigious 100 Days Coding Challenge in Java — demonstrating discipline, consistency, and growth mindset.' },
     { icon: '🏆', title: 'Multi-Platform Certified', desc: 'Earned multiple industry certifications from Oracle, AWS Academy, IBM, and HackerRank — validating cloud, AI, and development expertise.' },
   ];
