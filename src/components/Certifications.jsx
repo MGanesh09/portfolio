@@ -52,28 +52,58 @@ export default function Certifications() {
 
         <div ref={containerRef} className="cert-grid">
           {certifications.map((cert, i) => (
-            <div key={i} className="glass-card cert-card" style={{
-              background: cert.color,
-              borderColor: cert.border,
-              display: 'flex', gap: 20, alignItems: 'flex-start', padding: 32,
-              transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
+            <div
+              key={i}
+              className="glass-card cert-card"
+              onClick={() => {
+                if (cert.link) {
+                  window.open(cert.link, '_blank', 'noopener,noreferrer');
+                }
+              }}
+              style={{
+                background: cert.color,
+                borderColor: cert.border,
+                display: 'flex', gap: 20, alignItems: 'flex-start', padding: 32,
+                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                cursor: cert.link ? 'pointer' : 'default',
+              }}
               onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 12px 30px ${cert.border}`; e.currentTarget.style.transform = 'translateY(-6px)'; }}
               onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}
             >
               <div className="cert-icon" style={{ fontSize: '3rem', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }}>{cert.icon}</div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
                 <h3 className="cert-name" style={{ fontSize: '1.15rem', fontWeight: 800 }}>{cert.name}</h3>
                 <div className="cert-issuer" style={{ color: '#00f5ff', fontFamily: 'JetBrains Mono, monospace', fontSize: 13, fontWeight: 600 }}>📌 {cert.issuer}</div>
                 <div className="cert-year" style={{ color: '#8b949e', fontSize: 12.5 }}>Issued {cert.year}</div>
-                <div style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 6,
-                  marginTop: 10, padding: '4px 12px', borderRadius: 20,
-                  background: 'rgba(0,255,136,0.08)', border: '1px solid rgba(0,255,136,0.25)',
-                  fontSize: 12, color: '#00ff88', fontFamily: 'JetBrains Mono, monospace', width: 'fit-content',
-                }}>
-                  <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#00ff88', display: 'inline-block', boxShadow: '0 0 6px #00ff88' }} />
-                  VERIFIED
+                <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginTop: 10, flexWrap: 'wrap' }}>
+                  <div style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 6,
+                    padding: '4px 12px', borderRadius: 20,
+                    background: 'rgba(0,255,136,0.08)', border: '1px solid rgba(0,255,136,0.25)',
+                    fontSize: 12, color: '#00ff88', fontFamily: 'JetBrains Mono, monospace', width: 'fit-content',
+                  }}>
+                    <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#00ff88', display: 'inline-block', boxShadow: '0 0 6px #00ff88' }} />
+                    VERIFIED
+                  </div>
+                  {cert.link && (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={e => e.stopPropagation()}
+                      style={{
+                        display: 'inline-flex', alignItems: 'center', gap: 6,
+                        padding: '4px 12px', borderRadius: 20,
+                        background: 'rgba(0,245,255,0.08)', border: '1px solid rgba(0,245,255,0.3)',
+                        fontSize: 12, color: '#00f5ff', textDecoration: 'none',
+                        fontFamily: 'JetBrains Mono, monospace', transition: 'all 0.2s ease',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,245,255,0.25)'; e.currentTarget.style.color = '#fff'; }}
+                      onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,245,255,0.08)'; e.currentTarget.style.color = '#00f5ff'; }}
+                    >
+                      View Credential ↗
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -117,6 +117,15 @@ export const projects = [
 
 export const certifications = [
   {
+    name: 'IBM Advanced Generative AI',
+    issuer: 'IBM Career Education',
+    year: '2025',
+    icon: '🧠',
+    link: 'https://courses.ibmcep.cognitiveclass.ai/certificates/1c20a0bc468248879a7bab474fada3fb',
+    color: 'rgba(15, 98, 254, 0.1)',
+    border: 'rgba(15, 98, 254, 0.35)',
+  },
+  {
     name: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
     issuer: 'Oracle',
     year: '2025',
@@ -146,7 +155,7 @@ export const achievements = [
   { num: 100, suffix: '+', label: 'DSA Problems Solved', sublabel: 'LeetCode, CodeChef, HackerRank', icon: '⚡' },
   { num: 100, suffix: '', label: 'Days Coding Challenge', sublabel: 'Completed in Java', icon: '🔥' },
   { num: 8.24, suffix: '/10', label: 'CGPA at VIT-AP', sublabel: 'B.Tech CSE', icon: '🎓', decimals: 2 },
-  { num: 3, suffix: '+', label: 'Industry Certifications', sublabel: 'Oracle, AWS, IBM, HackerRank', icon: '🏆' },
+  { num: 4, suffix: '+', label: 'Industry Certifications', sublabel: 'Oracle, AWS, IBM, HackerRank', icon: '🏆' },
 ];
 
 export const strengths = [

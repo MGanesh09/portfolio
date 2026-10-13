@@ -116,7 +116,7 @@ export default function About() {
                   { num: 8.24, suf: '/10', label: 'CGPA', dec: 2 },
                   { num: 100, suf: '+', label: 'Problems Solved', dec: 0 },
                   { num: 5, suf: '+', label: 'Projects Built', dec: 0 },
-                  { num: 3, suf: '+', label: 'Certifications', dec: 0 },
+                  { num: 4, suf: '+', label: 'Certifications', dec: 0 },
                 ].map((s, i) => (
                   <div key={i} className="glass-card stat-card" style={{ transition: 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)' }}>
                     <div className="stat-num gradient-text">
